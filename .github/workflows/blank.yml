@@ -42,3 +42,9 @@ jobs:
 
       - name: Secret Variable
         run: echo ${{ secrets.NAMA_LENGKAP }}
+
+      - name: Install Library
+        run: pip install python-dotenv
+
+      - name: Run Python Secrets Variables
+        run: python rahasia.py
